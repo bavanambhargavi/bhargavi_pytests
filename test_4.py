@@ -1,14 +1,4 @@
-# import warnings
 
-
-# def test_hello(recwarn):
-#     warnings.warn("hello", UserWarning)
-#     assert len(recwarn) == 1
-#     w = recwarn.pop(UserWarning)
-#     assert issubclass(w.category, UserWarning)
-#     assert str(w.message) == "hello"
-#     assert w.filename
-#     assert w.lineno
 import warnings
 
 

@@ -1,5 +1,11 @@
 import pytest
 import logging
+def distance(num1, num2):
+    return abs(num1 - num2)
+
+def sum_of_square(num1, num2):
+    return num1 ** 2 + num2 ** 2
+
 @pytest.fixture(scope="class")
 def dummy_data(request):
     request.cls.num1 = 10
@@ -14,4 +20,5 @@ class TestCalculatorClass:
 
     def test_sum_of_square(self):
         logging.info("Test sum of square function")
-        assert sum_of_square(self.num1, self.num2) == 500
+        assert sum_of_square(self.num1, self.num2) == 50
+
